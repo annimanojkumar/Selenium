@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Revlog Test Automation Test Suite]">
+  <listeners>
+    <listener class-name="com.revlog.qa.ExtentReportListener.ExtentReporterNG"/>
+    <listener class-name="com.revlog.qa.ExtentReportListener.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Revlog App Test Cases(failed)">
+    <classes>
+      <class name="com.revlog.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.revlog.qa.testcases.LoginPageTest -->
+      <class name="com.revlog.qa.testcases.TicketUploadTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="upload"/>
+        </methods>
+      </class> <!-- com.revlog.qa.testcases.TicketUploadTest -->
+    </classes>
+  </test> <!-- Revlog App Test Cases(failed) -->
+</suite> <!-- Failed suite [Revlog Test Automation Test Suite] -->
